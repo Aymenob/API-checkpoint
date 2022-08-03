@@ -13,11 +13,11 @@ function UserList() {
             }
           })
             .then(response => setuserlist(response.data))
-            .catch(error => error)
+            .catch(error => console.log(error))
     }
     const [userlist, setuserlist] = useState([])
     useEffect(() => {
-        userData(); console.log(userlist)
+        userData(); 
 
     }, [])
 
