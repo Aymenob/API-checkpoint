@@ -12,10 +12,10 @@ function UserList() {
            
             }
           })
-            .then(res => setuserlist(res.data))
-            .catch(err => err)
+            .then(response => setuserlist(response.data))
+            .catch(error => error)
     }
-    const [userlist, setuserlist] = useState()
+    const [userlist, setuserlist] = useState([])
     useEffect(() => {
         userData(); console.log(userlist)
 
